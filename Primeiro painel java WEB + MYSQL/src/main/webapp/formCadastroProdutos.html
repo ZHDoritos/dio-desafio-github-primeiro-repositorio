@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CADASTRAR PRODUTOS</title>
+<style>
+	.botao {
+		background-color: #4CAF50;
+  		border: 1px;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		margin: 4px 2px;
+  		cursor: pointer;
+	}
+	.quadro {
+		border: solid;
+	}
+	.top {
+		background-color: #4CAF50;
+  		border: 1px;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		margin: none;
+	}
+</style>
+</head>
+<body>
+	
+	<table class="quadro" align="center">
+		<thead>
+			<tr class="top">
+				<th>CADASTRO DE PRODUTOS</th>
+			</tr>
+		</thead>
+
+		<tr style="text-align:left">
+			<form method="post" action="cadastro">
+			<td>*Código: <input type="text" placeholder="Somente números" name="txtcodigo" autocomplete="off" required><br><br>
+			*Produto: <input type="text" placeholder="Somente letras" name="txtnomeproduto" autocomplete="off" required><br><br>
+			*Valor: <input type="text" placeholder="Somente números" name="txtvalor" autocomplete="off" required><br><br>
+			*Quantidade: <input type="text" placeholder="Somente números" name="txtquantidade" autocomplete="off" required><br><br>
+			<center><input class="botao" type="submit" value="Cadastrar" ></center></td>
+			</form>
+		</tr>
+		
+	</table>
+</body>
+</html>
